@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <title>Coronavirus Tracker Application</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+<div class="container">
+  <h1>Coronavirus Tracker Application</h1>
+  <p>This application lists the current number of cases reported across the globe</p>
+
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col">
+        <h1 class="display-4" th:text="${totalReportedCases}"></h1>
+        <p class="lead">Total cases reported as of today</p>
+        <hr class="my-4">
+      </div>
+      <div class="col">
+        <a th:href="@{global}"> <h1 class="display-4" >Global Figures</h1> </a>
+      </div>
+    </div>
+    <p>
+      <span>New cases reported since previous day:</span>
+      <span th:text="${totalNewCases}"></span>
+    </p>
+  </div>
+
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col">
+        <h1 class="display-4" th:text="${usTotalReportedCases}"></h1>
+        <p class="lead">Total cases reported as of today</p>
+        <hr class="my-4">
+      </div>
+      <div class="col">
+        <a th:href="@{us}"> <h1 class="display-4" >US Figures</h1> </a>
+      </div>
+    </div>
+    <p>
+      <span>New cases reported since previous day:</span>
+      <span th:text="${usTotalNewCases}"></span>
+    </p>
+  </div>
+
+
+</div>
+</body>
+
+</html>
