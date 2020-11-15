@@ -1,27 +1,17 @@
 # Covid-19-tracker
 
-This project is an web recommendation enginee that allows users to browse near by recreational activities.  
-The data comes from the [TicketMaster API](https://developer.ticketmaster.com/).
+This project is an Covid 19 number tracker that allows users to have an overall idea about the current situation about Covid 19.
+The data comes from the [CSSEGISandData](https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master).
 
 
 ### App Walkthrough GIF
 <img src="http://g.recordit.co/6Tkm2atQJg.gif" width=250><br>
 ---
 
-## Part 1_Logic Tier
-
-### Logic Tier
-
-#### TASKS 
-- [ ] User sees an app icon on the home screen and a styled launch screen.
-- [ ] User can view and scroll through a list of movies now playing in theaters.
-- [ ] User can view the movie poster image for each movie.
-
 #### FINISHED
-Five servlets:
-- [✓] Search Item : Fetch data from TicketMaster API  
-- [✓] Recommendation : Using 
-
+- [✓] Applied Model-View-Controller pattern to establish a COVID-19 tracker web application to track coronavirus confirmed cases around the globe based on Spring boot  
+- [✓] The application imports and parses corresponding data from COVID-19 Data Repository by the Center for Systems Science and Engineering at Johns Hopkins University  
+- [✓] Front-end view page utilizing HTML, CSS, Thymeleaf  
 
 ### Notes
 Describe any challenges encountered while building the app.
